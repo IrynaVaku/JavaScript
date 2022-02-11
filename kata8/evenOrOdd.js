@@ -7,4 +7,4 @@ if (n % 2 === 0) {
     return "Odd"
 }
 }
-console.log(even_or_odd(5))
+console.log(even_or_odd())

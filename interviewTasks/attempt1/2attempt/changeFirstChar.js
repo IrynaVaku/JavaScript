@@ -9,7 +9,7 @@ const changeFirstChar = (str) => {
       //console.log(newStr);
       newStr = newStr + ' ' + str[i + 1].toUpperCase();
       i++;
-     // console.log('newStr', newStr);
+      // console.log('newStr', newStr);
     } else {
       newStr += str[i];
     }

@@ -23,7 +23,7 @@ let res = plusMinus(testArr);
 console.log(res);
 
 ///Second method
-const plusMinus1 = (arr) => {
+/*const plusMinus1 = (arr) => {
   let countNeg = 0;
   let countPos = 0;
   for (let el of arr) {
@@ -50,4 +50,4 @@ const plusMinus3 = (arr) => {
   let ratioPos = (countPos / arr.length).toFixed(6);
   let ratioZero = ((arr.length - ratioNeg - ratioPos) / arr.length).toFixed(6);
   return `${ratioNeg}\n${ratioPos}\n${ratioZero}`;
-};
+};*/

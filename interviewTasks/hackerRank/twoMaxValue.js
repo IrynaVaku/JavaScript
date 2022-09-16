@@ -14,23 +14,23 @@ const twoMaxValue2 = (arr) => {
   let current;
   for (let i = 1; i < arr.length; i++) {
     current = arr[i];
-    console.log('\nI work with current el', current);
-    console.log({ maxMax, maxNext });
+    //console.log('\nI work with current el', current);
+    //console.log({ maxMax, maxNext });
     if (current > maxMax) {
-      console.log('I see current is bigger than maxMax');
+     // console.log('I see current is bigger than maxMax');
       maxNext = maxMax;
-      console.log('New maxNext is ', maxNext);
+      //console.log('New maxNext is ', maxNext);
       maxMax = current;
-      console.log('New maxMax value is', maxMax);
+      //console.log('New maxMax value is', maxMax);
     } else {
-      console.log('I see current is less or equal maxMax');
-      console.log('I compare current with maxNext');
+      //console.log('I see current is less or equal maxMax');
+      //console.log('I compare current with maxNext');
       if (current > maxNext) {
-        console.log('I see current is bigger than maxNext');
+       // console.log('I see current is bigger than maxNext');
         maxNext = current;
-        console.log('New maxNext is ', maxNext);
+       // console.log('New maxNext is ', maxNext);
       } else {
-        console.log('I do not change anything');
+      //  console.log('I do not change anything');
       }
     }
   }

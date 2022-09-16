@@ -19,7 +19,7 @@ function fibonacci2(num) {
 return result[num];
 }
 let result = fibonacci2(50)
-//console.log(result);
+console.log(result);
 
 //Third method
 const fibonacci3 = (num, memo = {}) => {

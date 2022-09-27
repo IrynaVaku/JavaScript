@@ -9,4 +9,16 @@ const fibonacci = (num) => {
   return arr;
 };
 res = fibonacci(10);
-console.log(res);
+//console.log(res);
+/////////////////////////
+const num = [];
+const solve = (num) => {
+  num[0] = '0';
+  num[1] = '01';
+  for (i = 2; i <= 10; i++) {
+    // Next numonacci number = previous + one before previous
+    // Translated to JavaScript:
+    num[i] = num[i - 2] + num[i - 1];
+  }
+};
+console.log(fibonacci(7));

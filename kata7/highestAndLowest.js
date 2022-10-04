@@ -3,7 +3,7 @@ const highAndLow = (numbers) => {
   let arr = numbers.split(' ');
   let high = +arr[0];
   let low = +arr[0];
-  //console.log(arr);
+  console.log(arr);
   for (let i = 1; i < arr.length; i++) {
     if (+arr[i] > high) {
       high = arr[i];

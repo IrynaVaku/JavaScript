@@ -12,3 +12,8 @@ function elevator(left, right, call) {
   }
 }
 console.log(elevator(0, 1, 2));
+///////////////////////////////////////////////////
+function elevator1(left, right, call) {
+  return Math.abs(left - call) < Math.abs(right - call) ? 'left' : 'right';
+}
+console.log(elevator1(0, 1, 0));

@@ -18,7 +18,7 @@ function fibonacci2(num) {
   }
 return result[num];
 }
-let result = fibonacci2(50)
+let result = fibonacci2(50) % 10
 console.log(result);
 
 //Third method
@@ -29,4 +29,4 @@ const fibonacci3 = (num, memo = {}) => {
 return memo[num]
   };
   let result2 = fibonacci3(75)
-  console.log(result2);
+  //console.log(result2);

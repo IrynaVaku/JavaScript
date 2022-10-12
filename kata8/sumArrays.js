@@ -8,3 +8,7 @@ function sum(numbers) {
   return summ;
 }
 console.log(sum(numbers));
+//////////////////////////////////
+function sum1(numbers) {
+  return numbers.length == 0 ? 0 : numbers.reduce((acc, el) => acc + el, 0);
+}

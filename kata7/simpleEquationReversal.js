@@ -17,8 +17,13 @@ console.log(solve('100*b/y'));
 //////////////////////////////////////////////
 function solve1(eq) {
   return eq
-    .split(/([*\+\-\/])/)
+    .split(/([*+-/])/)
     .reverse()
     .join('');
 }
 console.log(solve1('100*b/y'));
+/////////////////////////
+function solve2(eq) {
+  return eq.split(/\b/).reverse().join('');
+}
+console.log(solve2('100*b/y'));

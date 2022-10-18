@@ -15,4 +15,4 @@ function duckDuckGoose(players, goose) {
 function duckDuckGoose1(players, goose) {
   return players[(goose - 1) % players.length];
 }
-console.log(duckDuckGoose1(players, 1));
+console.log(duckDuckGoose1(players, 54));

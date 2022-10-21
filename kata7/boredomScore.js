@@ -39,3 +39,28 @@ function boredom(staff) {
     : 'party time!!';
 }
 console.log(boredom(staff));
+
+////////////////////////////////////////////////
+function boredom2(staff) {
+  const ass = {
+    accounts: 1,
+    finance: 2,
+    canteen: 10,
+    regulation: 3,
+    trading: 6,
+    change: 6,
+    IS: 8,
+    retail: 5,
+    cleaning: 4,
+    'pissing about': 25,
+  };
+  let count = Object.values(staff)
+    .map((el) => ass[el])
+    .reduce((sum, el) => sum + el, 0);
+  return count <= 80
+    ? 'kill me now'
+    : count < 100 && count > 80
+    ? 'i can handle this'
+    : 'party time!!';
+}
+

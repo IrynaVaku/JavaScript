@@ -4,17 +4,17 @@ function maxDiff(list) {
 }
 
 ///////////////////////////////////////////
-function maxDiff(list1) {
-  let max = Math.max(...list1);
-  let min = Math.min(...list1);
+function maxDiff1(list) {
+  let max = Math.max(...list);
+  let min = Math.min(...list);
 
-  if (list1.length <= 1) {
+  if (list.length <= 1) {
     return 0;
   }
 
   return max - min;
 }
 ///////////////////////////////////////////
-function maxDiff(list2) {
-  return list2.sort((a, b) => b - a)[0] - list2.sort((a, b) => a - b)[0] || 0;
+function maxDiff2(list) {
+  return list.sort((a, b) => b - a)[0] - list.sort((a, b) => a - b)[0] || 0;
 }
